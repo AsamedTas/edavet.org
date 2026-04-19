@@ -1,3 +1,4 @@
+export { default as Categories } from './Categories.svelte'
 export { default as Contact } from './Contact.svelte'
 export { default as CTA } from './CTA.svelte'
 export { default as FAQ } from './FAQ.svelte'

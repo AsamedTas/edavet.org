@@ -1,5 +1,6 @@
 <script lang='ts'>
   import {
+    Categories,
     Contact,
     CTA,
     FAQ,
@@ -13,6 +14,7 @@
 </script>
 
 <Hero />
+<Categories />
 <Features />
 <Stats />
 <Pricing />
