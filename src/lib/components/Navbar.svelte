@@ -102,30 +102,29 @@
       <li><a href='/#features' class='text-[14px] px-5 py-2 font-medium tracking-tight text-base-content border border-base-content/8 hover:border-amber-500/30 hover:bg-amber-500/5 rounded-[7px] transition-all duration-300 bg-base-200/25 backdrop-blur-sm shadow-xs'>Hakkımızda</a></li>
     </ul>
   </div>
-
   <div class='navbar-end gap-1'>
     <!-- Dil Seçeneği -->
-    <div class='dropdown dropdown-end'>
-      <div tabindex='0' role='button' class='btn btn-ghost btn-sm btn-circle' aria-label='Dil Seç'>
+    <div class='dropdown dropdown-end hidden sm:block'>
+      <div tabindex='0' role='button' class='btn btn-ghost btn-sm btn-circle opacity-60 hover:opacity-100 transition-opacity' aria-label='Dil Seç'>
         <Globe class='w-5 h-5' />
       </div>
-      <ul class='dropdown-content menu z-100 p-2 shadow-xl bg-base-100 rounded-box w-40 border border-base-200'>
+      <ul class='dropdown-content menu z-100 p-2 shadow-xl bg-base-100 rounded-box w-40 border border-base-content/10 mt-2'>
         <li><button class='active:bg-primary/10 flex items-center gap-2'><span class="text-lg leading-none">🇹🇷</span> Türkçe</button></li>
         <li><button class='active:bg-primary/10 flex items-center gap-2'><span class="text-lg leading-none">🇬🇧</span> İngilizce</button></li>
         <li><button class='active:bg-primary/10 flex items-center gap-2'><span class="text-lg leading-none">🇷🇺</span> Rusça</button></li>
       </ul>
     </div>
 
+    <!-- Öne Çıkan CTA -->
+    <a href="/invitations/custom" class="btn btn-sm sm:btn-md bg-amber-500 hover:bg-amber-600 border-0 text-white shadow-lg shadow-amber-500/20 px-6 rounded-full transition-all hover:scale-105 active:scale-95 ml-2 font-bold tracking-tight">
+      Hemen Oluştur
+    </a>
+
     <!-- Tema Değiştirici -->
-    <label class='swap swap-rotate btn btn-ghost btn-sm btn-circle'>
+    <label class='swap swap-rotate btn btn-ghost btn-sm btn-circle ml-1'>
       <input type='checkbox' class='theme-controller' value='dark' />
       <Sun class='swap-on w-5 h-5' />
       <Moon class='swap-off w-5 h-5' />
     </label>
-
-    <!-- Satın Al Butonu -->
-    <a href='/order' class='btn btn-primary btn-sm md:btn-md shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all ml-1'>
-      Satın Al
-    </a>
   </div>
 </nav>

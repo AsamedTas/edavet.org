@@ -42,8 +42,8 @@
       </details>
     </li>
 
-    <li><a href='/pricing' class='font-semibold'>Fiyatlandırma</a></li>
-    <li><a href='/contact' class='font-semibold'>İletişim</a></li>
+    <li><a href='/#pricing' class='font-semibold'>Fiyatlandırma</a></li>
+    <li><a href='/#contact' class='font-semibold'>İletişim</a></li>
 
     <div class='divider my-1'></div>
 

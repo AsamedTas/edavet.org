@@ -6,6 +6,7 @@
     FAQ,
     Features,
     Hero,
+    HowItWorks,
     Pricing,
     Stats,
     Team,
@@ -15,6 +16,7 @@
 
 <Hero />
 <Categories />
+<HowItWorks />
 <Features />
 <Stats />
 <Pricing />
