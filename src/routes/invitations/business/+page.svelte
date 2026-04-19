@@ -35,42 +35,75 @@
   <div class='absolute inset-0 z-0 opacity-[0.03]' style='background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px); background-size: 60px 60px;'></div>
 
   <div class='container mx-auto px-4 relative z-10 py-20'>
-    <div class='max-w-4xl mx-auto text-center'>
-      <div class='inline-flex items-center gap-2 bg-white/5 border border-white/10 text-blue-300 rounded-full py-2 px-6 mb-8 text-sm font-semibold backdrop-blur-sm'>
-        <Briefcase class='w-4 h-4' />
-        Kurumsal Davetiye Çözümleri
+    <div class='flex flex-col lg:flex-row items-center gap-12 lg:gap-20'>
+      
+      <!-- Text Content -->
+      <div class='flex-1 text-center lg:text-left'>
+        <div class='inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-full py-2 px-6 mb-8 text-sm font-bold uppercase tracking-widest backdrop-blur-md'>
+          <Briefcase class='w-4 h-4' />
+          Kurumsal Prestij & İmaj
+        </div>
+
+        <h1 class='text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] text-white'>
+          İş Etkinliklerinize <br />
+          <span class='bg-gradient-to-r from-blue-400 via-cyan-300 to-violet-400 bg-clip-text text-transparent italic font-serif'>Dijital Vizyon Katın.</span>
+        </h1>
+
+        <p class='text-lg md:text-xl text-gray-400 mb-10 font-medium leading-relaxed max-w-xl mx-auto lg:mx-0'>
+          Lansman, fuar ve konferanslarınız için profesyonel dijital davetiyeler. Detaylı analitik, toplu kayıt yönetimi ve beyaz etiket desteğiyle <span class="text-blue-400 font-bold">marka imajınızı güçlendirin.</span>
+        </p>
+
+        <div class='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
+          <a href='/invitations/custom' class='btn btn-lg bg-blue-600 hover:bg-blue-500 border-0 text-white shadow-xl shadow-blue-500/20 hover:-translate-y-1 transition-all rounded-[14px] px-10'>
+            Hemen Tasarla
+          </a>
+          <a href='/contact' class='btn btn-lg bg-white/5 border border-white/10 text-white/70 hover:bg-white/10 px-10 rounded-[14px]'>
+            Profesyonel Destek
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class='mt-12 flex flex-wrap justify-center lg:justify-start gap-6 text-gray-500/60 items-center'>
+          <span class='text-xs font-bold uppercase tracking-widest border border-white/5 px-3 py-1 rounded'>Fortune 500</span>
+          <span class='text-xs font-bold uppercase tracking-widest border border-white/5 px-3 py-1 rounded'>ISO 27001</span>
+          <span class='text-xs font-bold uppercase tracking-widest border border-white/5 px-3 py-1 rounded'>KVKK Uyumlu</span>
+        </div>
       </div>
 
-      <h1 class='text-5xl md:text-7xl font-black mb-6 tracking-tight leading-[1.1] text-white'>
-        İşinize
-        <br />
-        <span class='bg-gradient-to-r from-blue-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent italic'>
-          Prestij Katın
-        </span>
-      </h1>
+      <!-- Hero Visual (Business Preview) -->
+      <div class='flex-1 flex justify-center lg:justify-end w-full'>
+        <div class="relative w-full max-w-md">
+           <!-- Data Tags -->
+           <div class='absolute -top-6 -right-6 bg-blue-600 text-white rounded-2xl p-4 shadow-2xl z-20 animate-pulse border border-white/20 hidden sm:block'>
+              <div class="flex items-center gap-2">
+                <ChartBar class="w-5 h-5" />
+                <span class="font-bold text-sm">Aktif Takip</span>
+              </div>
+           </div>
 
-      <p class='text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed'>
-        Kurumsal etkinliklerinizi yansıtan profesyonel davetiyeler. Detaylı analitik, toplu kayıt yönetimi ve beyaz etiket desteğiyle markanızı bir adım öne taşıyın.
-      </p>
-
-      <div class='flex flex-col sm:flex-row gap-4 justify-center'>
-        <a href='/order' class='btn btn-lg bg-gradient-to-r from-blue-500 to-violet-500 border-0 text-white shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40 hover:scale-105 transition-all px-10'>
-          <Zap class='w-5 h-5' />
-          Kurumsal Teklif Al
-        </a>
-        <a href='/contact' class='btn btn-lg bg-white/5 border border-white/10 text-white hover:bg-white/10 px-10 group backdrop-blur-sm'>
-          İletişime Geç
-          <ChevronRight class='w-5 h-5 group-hover:translate-x-1 transition-transform' />
-        </a>
+          <!-- Phone Mockup Shadow -->
+          <div class="absolute -inset-10 bg-blue-500/10 rounded-full blur-[100px]"></div>
+          
+          <div class="relative rounded-[36px] border-[8px] border-white/5 shadow-2xl overflow-hidden aspect-[9/16] bg-slate-900 border-base-200">
+             <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-black"></div>
+             <!-- Mockup Content -->
+             <div class="absolute inset-0 p-8 flex flex-col justify-center items-center text-center">
+                <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 border border-blue-500/30">
+                  <Briefcase class="w-8 h-8 text-blue-400" />
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Tech Summit 2026</h3>
+                <div class="h-px w-full bg-white/10 mb-6"></div>
+                <div class="space-y-3 w-full">
+                  <div class="h-2 bg-white/5 rounded-full w-3/4 mx-auto"></div>
+                  <div class="h-2 bg-white/5 rounded-full w-1/2 mx-auto"></div>
+                  <div class="h-2 bg-white/5 rounded-full w-2/3 mx-auto"></div>
+                </div>
+                <div class="mt-8 px-6 py-2 bg-blue-600 rounded-lg text-xs font-bold text-white">KATILIM ONAYLA</div>
+             </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Güven Logoları -->
-      <div class='mt-16 flex flex-wrap justify-center gap-8 text-gray-500/60'>
-        <span class='font-bold text-sm uppercase tracking-widest'>Fortune 500</span>
-        <span class='font-bold text-sm uppercase tracking-widest'>ISO 27001</span>
-        <span class='font-bold text-sm uppercase tracking-widest'>KVKK Uyumlu</span>
-        <span class='font-bold text-sm uppercase tracking-widest'>SSL Korumalı</span>
-      </div>
     </div>
   </div>
 </section>

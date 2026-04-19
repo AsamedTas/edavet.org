@@ -49,49 +49,66 @@
   </div>
 
   <div class='container mx-auto px-4 relative z-10 py-20'>
-    <div class='max-w-4xl mx-auto text-center'>
-      <div class='inline-flex items-center gap-2 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full py-2 px-6 mb-8 text-sm font-semibold'>
-        <Heart class='w-4 h-4 fill-current' />
-        Dijital Düğün Davetiyesi
+    <div class='flex flex-col lg:flex-row items-center gap-12 lg:gap-20'>
+      
+      <!-- Text Content -->
+      <div class='flex-1 text-center lg:text-left'>
+        <div class='inline-flex items-center gap-2 bg-rose-500/10 border border-rose-500/20 text-rose-600 rounded-full py-2 px-6 mb-8 text-sm font-bold uppercase tracking-widest'>
+          <Heart class='w-4 h-4 fill-current' />
+          Düğün & Nikah Hikayeniz
+        </div>
+
+        <h1 class='text-4xl md:text-6xl font-black mb-6 tracking-tight leading-[1.1] text-base-content'>
+          Aşkınızı Anlatan, <br />
+          <span class='bg-gradient-to-r from-rose-600 to-amber-500 bg-clip-text text-transparent italic font-serif'>En Zarif İMZA.</span>
+        </h1>
+
+        <p class='text-lg md:text-xl text-base-content/70 mb-10 font-medium leading-relaxed max-w-xl mx-auto lg:mx-0'>
+          Düğününüzün büyüsünü misafirlerinize ilk saniyeden hissettirin. Tamamen size özel tasarlanan, akıllı LCV takibi ve canlı geri sayımlı premium dijital davetiyeniz <span class="text-rose-600 font-bold">dakikalar içinde yayında.</span>
+        </p>
+
+        <div class='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
+          <a href='/invitations/custom' class='btn btn-lg bg-rose-500 hover:bg-rose-600 border-0 text-white shadow-xl shadow-rose-500/25 hover:-translate-y-1 transition-all rounded-[14px] px-10'>
+            Hemen Tasarlamaya Başla
+          </a>
+          <a href='/#pricing' class='btn btn-lg bg-base-100 hover:bg-base-200 border border-base-content/10 shadow-sm rounded-[14px] px-10 text-base-content/70'>
+            Paketleri Gör
+          </a>
+        </div>
       </div>
 
-      <h1 class='text-5xl md:text-7xl font-black mb-6 tracking-tight leading-[1.1]'>
-        Aşkınızı Anlatan
-        <br />
-        <span class='bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 bg-clip-text text-transparent italic'>
-          Mükemmel Davetiye
-        </span>
-      </h1>
-
-      <p class='text-lg md:text-xl text-base-content/60 max-w-2xl mx-auto mb-10 font-medium leading-relaxed'>
-        Düğününüzün büyüsünü misafirlerinize hissettirin. Romantik tasarımlar, canlı geri sayım ve akıllı LCV ile hayalinizdeki davetiyeyi oluşturun.
-      </p>
-
-      <!-- Geri Sayım Önizleme -->
-      <div class='flex justify-center gap-4 mb-10'>
-        {#each [
-          { val: '124', label: 'Gün' },
-          { val: '08', label: 'Saat' },
-          { val: '42', label: 'Dakika' },
-          { val: '17', label: 'Saniye' },
-        ] as item}
-          <div class='bg-white/80 dark:bg-base-200/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-rose-100 dark:border-base-content/10 min-w-[80px]'>
-            <div class='text-3xl md:text-4xl font-black text-rose-600 dark:text-rose-400'>{item.val}</div>
-            <div class='text-xs font-medium text-base-content/50 uppercase tracking-wider'>{item.label}</div>
+      <!-- Hero Visual (Countdown & Card Preview) -->
+      <div class='flex-1 flex justify-center lg:justify-end w-full'>
+        <div class="relative w-full max-w-md">
+           <!-- Premium Countdown -->
+           <div class='flex justify-center gap-3 mb-10 absolute -top-12 left-1/2 -translate-x-1/2 w-full z-20'>
+            {#each [
+              { val: '124', label: 'Gün' },
+              { val: '08', label: 'Saat' },
+              { val: '42', label: 'Dak' },
+            ] as item}
+              <div class='bg-white/90 backdrop-blur-md rounded-2xl p-3 shadow-xl border border-rose-100 min-w-[70px] text-center'>
+                <div class='text-2xl font-black text-rose-600'>{item.val}</div>
+                <div class='text-[10px] font-bold text-base-content/40 uppercase'>{item.label}</div>
+              </div>
+            {/each}
           </div>
-        {/each}
+
+          <!-- Phone Mockup Shadow -->
+          <div class="absolute -inset-10 bg-rose-500/20 rounded-full blur-[100px] animate-pulse"></div>
+          
+          <div class="relative rounded-[36px] border-[8px] border-base-200 shadow-2xl overflow-hidden aspect-[9/16] bg-rose-50">
+             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800')] bg-cover bg-center"></div>
+             <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+             <div class="absolute bottom-10 left-0 w-full text-center p-6 text-white bg-gradient-to-t from-black/60 to-transparent">
+                <p class="font-serif italic text-xl mb-1">Deren & Mert</p>
+                <div class="h-px w-12 bg-white/50 mx-auto my-2"></div>
+                <p class="text-xs uppercase tracking-widest font-bold">20 HAZİRAN 2024</p>
+             </div>
+          </div>
+        </div>
       </div>
 
-      <div class='flex flex-col sm:flex-row gap-4 justify-center'>
-        <a href='/order' class='btn btn-lg bg-gradient-to-r from-rose-500 to-pink-500 border-0 text-white shadow-xl shadow-rose-500/25 hover:shadow-rose-500/40 hover:scale-105 transition-all px-10'>
-          <Sparkles class='w-5 h-5' />
-          Düğün Davetiyeni Oluştur
-        </a>
-        <a href='/pricing' class='btn btn-lg btn-ghost px-10 group'>
-          Fiyatları İncele
-          <ChevronRight class='w-5 h-5 group-hover:translate-x-1 transition-transform' />
-        </a>
-      </div>
     </div>
   </div>
 </section>
