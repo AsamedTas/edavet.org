@@ -51,14 +51,15 @@
   <div class='container mx-auto px-4 relative z-10'>
     <!-- Başlık -->
     <div class='text-center mb-16'>
-      <div class='badge badge-outline badge-secondary mb-4 py-3 px-5 font-medium'>
-        ✨ Neden edavet.org?
+      <div class='badge badge-outline badge-secondary mb-4 py-3 px-5 font-medium uppercase tracking-widest text-[11px]'>
+        ✨ Zarafetin Dijital Hali
       </div>
-      <h2 class='text-4xl md:text-5xl font-black mb-4 tracking-tight'>
-        Davetiyelerinizi <span class='bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent'>Özel</span> Kılan Özellikler
+      <h2 class='text-4xl md:text-5xl font-black mb-6 tracking-tight'>
+        Anılarınızı <span class='bg-linear-to-r from-amber-500 to-amber-700 bg-clip-text text-transparent'>Sanata</span> Dönüştüren Dokunuşlar
       </h2>
-      <p class='text-base-content/60 max-w-2xl mx-auto text-lg font-medium'>
-        Modern teknolojiyi zarif tasarımlarla birleştirerek dijital davetiye deneyimini yeniden tanımlıyoruz.
+      <p class='text-base-content/70 max-w-2xl mx-auto text-lg font-medium leading-relaxed'>
+        Size özel detayları estetik birer sanat eserine dönüştürerek, misafirleriniz için 
+        unutulmaz ve prestij dolu bir ilk imza sunuyoruz.
       </p>
     </div>
 

@@ -8,20 +8,20 @@
   <div class='hero-content text-center z-10'>
     <div class='max-w-3xl'>
       <div class='badge badge-outline badge-primary mb-6 py-4 px-6 font-medium animate-bounce'>
-        ✨ Yeni Nesil Dijital Davetiye Platformu
+        ✨ Hikayenize Özel Dijital Dokunuşlar
       </div>
 
       <h1 class='text-5xl md:text-7xl font-black mb-8 tracking-tight leading-[1.1]'>
-        Her Anınız İçin <br />
-        <span class='bg-linear-to-r from-primary via-accent to-secondary bg-clip-text text-transparent italic'>
-          Mükemmel Davetiye
+        En Özel Anlarınızda <br />
+        <span class='bg-linear-to-r from-amber-500 via-amber-600 to-yellow-500 bg-clip-text text-transparent italic'>
+          Size Özel Bir İz
         </span>
       </h1>
 
       <p class='py-6 text-lg md:text-xl text-base-content/70 leading-relaxed font-medium'>
-        Bu sitede her zevke ve her etkinliğe uygun dijital davetiyeler oluşturabilirsiniz.
-        Arkadaşlarınızla bir buluşma, düğün, doğum, doğum günü veya büyük bir grupla gezi mi planlıyorsunuz
-        — tam adresine geldiniz! Tasarımı ve formatı seçin, akıllı algoritmalarımız gerisini sizin için halletsin.
+        Her kutlama benzersizdir, davetiyeniz de öyle olmalı. edavet.org ile ruhunuzu yansıtan, 
+        tamamen size özel tasarlanmış premium dijital davetiyelerle misafirlerinizi etkileyin. 
+        Sizin vizyonunuz, bizim zarafetimizle hayat bulsun.
       </p>
 
       <div class='flex flex-col sm:flex-row gap-4 justify-center items-center mt-10'>
